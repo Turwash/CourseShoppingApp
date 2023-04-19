@@ -17,6 +17,16 @@ export default function CartTotals({value}) {
                             clear cart
                         </button>
                     </Link>
+                    <button
+    
+                            className="btn btn-outline-danger text-uppercase mb-3 px-5"
+                            type="button"
+                            onClick={() => {
+                                alert("Your Order Is Confirmed");
+                                clearCart();
+                            }}>
+                            Buy Now
+                        </button>
                     <h5>
                         <span className="text-title">subtotal :</span>
                         <strong>{cartSubTotal}</strong>

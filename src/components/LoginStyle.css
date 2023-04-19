@@ -1,0 +1,100 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 400px;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h1 {
+  text-align: center;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input[type=text],
+.login-form input[type=password] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.login-form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0069d9;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid transparent;
+}
+
+/* New styles below */
+
+.login-form input[type=text]:focus,
+.login-form input[type=password]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.login-form input[type=text]:invalid,
+.login-form input[type=password]:invalid {
+  border-color: #dc3545;
+}
+
+.login-form input[type=text]:invalid + .invalid-feedback,
+.login-form input[type=password]:invalid + .invalid-feedback {
+  display: block;
+  color: #dc3545;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.login-form input[type=text]:valid + .valid-feedback,
+.login-form input[type=password]:valid + .valid-feedback {
+  display: block;
+  color: #28a745;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.invalid-feedback,
+.valid-feedback {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .login-form {
+    width: 90%;
+  }
+}

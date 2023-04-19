@@ -5,6 +5,9 @@ import {ButtonContainer} from './Button';
 
 export default class Details extends Component {
     render() {
+        const playVideo = () => {
+            window.location.href = "https://www.youtube.com/watch?v=-mJFZp84TIY&list=PLu0W_9lII9agx66oZnT6IyhcMIbUMNMdt";
+          }; 
         return (
             <ProductConsumer>
                 {value=>{
@@ -16,6 +19,9 @@ export default class Details extends Component {
                                 <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
                                     <h1>{title}</h1>
                                 </div>
+                                <div>
+      <ButtonContainer onClick={playVideo}>Watch The Course Live</ButtonContainer>
+    </div>
                             </div>
                             {/*end of title*/}
                             {/*product info*/}
@@ -54,6 +60,7 @@ export default class Details extends Component {
                                                 }}>
                                                {inCart ? "inCart" : "Add Course to cart"}
                                             </ButtonContainer>
+                                            
                                     </div>
                                 </div>
                             </div>
